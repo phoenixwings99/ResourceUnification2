@@ -5,6 +5,7 @@ using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.JsonSystem;
 using Owlcat.Runtime.Core.Logging;
 using ResourceUnification2.Logic;
+using ResourceUnification2.Unification;
 using System.Reflection;
 using System.Text;
 using UnityModManagerNet;
@@ -68,7 +69,11 @@ public static class Main
                 }
                 Initialized = true;
 
+                LocalizationTool.LoadEmbeddedLocalizationPacks(
+                  "ResourceUnification2.LocalizedStrings.json"
+                  );
                 Log.Log("Patching blueprints.");
+                Settings.Init();
                 //MagusArcanePool.TestApply();
                 // Insert your mod's patching methods here
                 // Example
@@ -80,6 +85,12 @@ public static class Main
             }
         }
     }
+    private static bool? DarkCodexInstalled;
+    public static bool IsDarkCodexInstalled()
+    {
+        return DarkCodexInstalled ??= UnityModManager.modEntries.Exists(x => x.Info.Id.Equals("DarkCodex"));
+    }
+
     [HarmonyPriority(Priority.Last)]
     [HarmonyPatch(typeof(StartGameLoader), "LoadAllJson")]
 
@@ -93,8 +104,7 @@ public static class Main
             if (Run) return; Run = true;
             try
             {
-                BlueprintTool.GetRef<BlueprintArchetypeReference>("be63e4da1a53d6044a403cab0e0c5288");
-                //MagusArcanePool.Thiefling();
+                ManualUnifyAzata.DoLate();
             }
             catch
             {

@@ -6,7 +6,27 @@
   },
 
   {
-    "Key": "Example.Description",
-    "enGB": "Description for your Feat/Class/Whatever"
+    "Key": "ResUnify.Settings.Title",
+    "enGB": "Resource Unification 2"
+  },
+
+  {
+    "Key": "ResUnify.Settings.AzataPerformanceUnification",
+    "enGB": "Combine Azata and Bard Performance Resources."
+  },
+
+  {
+    "Key": "ResUnify.Settings.AzataPerformanceUnification.Desc",
+    "enGB": "Removes Azata Performance Resource from Azata and replaces with additional bardsong. Reroutes Azata Performance Resource Cost to Bard. Should not break anything."
+  },
+
+  {
+    "Key": "ResUnify.Settings.MagusSelectionUnification.Desc",
+    "enGB": "Replaces alternate Magus arcana selections caused by merged resources with regular Magus selections. Should improve multi-archetyping options. Will not require new blueprints. Currently only Eldritch Scion is covered, Thiefling (Homebrew Archetypes) will be covered in later versions."
+  },
+
+  {
+    "Key": "ResUnify.Settings.MagusSelectionUnification",
+    "enGB": "Magus Selector Unification"
   }
 ]

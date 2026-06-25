@@ -18,7 +18,7 @@
         },
         {
           "ResourceAdderFeatureGuid": "f20ffeb753764efca39d1000ec93f520" //Water Dancer from expanded archetypes 
-        },
+        }
 
         
       ],
@@ -37,9 +37,6 @@
         ,
         {
           "ResourceAdderFeatureGuid": "369c2e686234fdf40864c3d683ee0fa0" //Homebrew Archetypes Thiefling
-        },
-        {
-
         }
       ],
       "NonClassResourceFeatureGuids": [
@@ -65,10 +62,7 @@
       "Key": "BardPerformance",
 
       "ClassResourceFeatureGuids": [
-        {
-
-
-        }
+        
 
       ],
       "NonClassResourceFeatureGuids": [

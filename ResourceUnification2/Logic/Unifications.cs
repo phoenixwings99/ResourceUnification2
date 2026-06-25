@@ -84,7 +84,10 @@ namespace ResourceUnification2.Logic
 
                     ModifyTools.Finish();
 
-
+                    if (Settings.IsEnabled("AzataPerformanceUnification"))
+                    {
+                        Unification.ManualUnifyAzata.Do();
+                    }
                 }
                 catch (Exception e)
                 {
