@@ -1,6 +1,6 @@
 ﻿{
   "Id": "ResourceUnification2",
-  "DisplayName": "ResourceUnification2",
+  "DisplayName": "Resource Unification 2",
   "Author": "",
   "Version": "1.0.0",
   "ManagerVersion": "0.27.11",
@@ -8,5 +8,5 @@
   "AssemblyName": "ResourceUnification2.dll",
   "EntryMethod": "ResourceUnification2.Main.Load",
   "HomePage": "",
-  "Repository": ""
+  "Repository": "https://github.com/phoenixwings99/ResourceUnification2"
 }
