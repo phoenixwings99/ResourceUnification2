@@ -17,6 +17,7 @@ namespace ResourceUnification2.Unification
     {
         internal static void Do()
         {
+            Main.Log.Log("Merging Azata Performance with Bard Performance");
             FeatureConfigurator.For("02c96331ed2d87d43a4a3509142678b8")
                 .RemoveComponents(x => x is AddAbilityResources)//Remove Add Azata Performance
                 .EditComponent<IncreaseResourcesByClass>(x => x.m_Resource = BlueprintTool.GetRef<BlueprintAbilityResourceReference>("e190ba276831b5c4fa28737e5e49e6a6"))//Point Increase Resources By Class at Bard Song

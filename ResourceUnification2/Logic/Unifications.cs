@@ -88,6 +88,10 @@ namespace ResourceUnification2.Logic
                     {
                         Unification.ManualUnifyAzata.Do();
                     }
+                    if (Settings.IsEnabled("MagusSelectionUnification"))
+                    {
+                        Unification.UnifyMagusSelectors.CleanUpScion();
+                    }
                 }
                 catch (Exception e)
                 {
